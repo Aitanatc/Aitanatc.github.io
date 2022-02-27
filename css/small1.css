@@ -1,0 +1,56 @@
+h1{
+
+    text-align: center;
+    color: white;
+    font-size: 5em;
+}
+
+header {
+    background-color: rgb(86, 171, 199);
+    align-items: center;
+    justify-content: center;
+    line-height: 2.75em;
+    border-radius: 25px;
+}
+.rectangle2{
+    height: 70px;
+    width: 100%;
+    background-color: rgb(86, 171, 199);
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+    font-size: 1em;
+}
+.update{
+    color: yellow;
+}
+.lessons{
+    padding-left: 6%;
+}
+.subtitle{
+    padding-left: 3%;
+}
+img {
+    /* position: absolute;
+    top: 90px;
+    right: 50px;
+    height: 290px; */
+    max-width: 100%;
+    position: relative;
+    z-index: 1000;
+    width: 285px;
+    height: 286px;
+    margin: 15px 10px 15px 5px;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+a:link {
+    color: blue;
+}
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: hotpink;
+}
