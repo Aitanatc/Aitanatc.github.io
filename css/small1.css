@@ -9,7 +9,7 @@ header {
     background-color: rgb(86, 171, 199);
     align-items: center;
     justify-content: center;
-    line-height: 2.75em;
+    padding: 0.25em;
     border-radius: 25px;
 }
 .rectangle2{
