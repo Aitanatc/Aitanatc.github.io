@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;800&display=swap');
+
+body{
+    font-family: 'Shippori-Mincho', serif;
+}
+header, footer{
+    background-color: #3aa3a0;
+    color: #f7d330;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+main{
+    padding: 1em;
+}
+a {
+	text-decoration: none;
+}
+nav{
+    background-color: #8ae2e0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+nav ul li{
+    color: blue;
+    flex: 1 1 auto;
+    padding: 0.5em;
+}
+
+.visiting{
+    background-color: #F7d330;
+    height: 40px;
+}
+.color-palete{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+
+}
+
+@media only screen and (min-width: 60em) {
+ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+body{
+    padding-left: 10em;
+    padding-right: 10em;
+}
+}
+
+/* @media only screen and (min-width: 20em) {
+    ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    body{
+        padding-left: 5em;
+        padding-right: 5em;
+    }    
+} */
