@@ -26,6 +26,7 @@ nav{
 
 }
 nav ul li{
+    font-size: 18pt;
     color: blue;
     flex: 1 1 auto;
     padding: 0.5em;
@@ -40,8 +41,28 @@ nav ul li{
     margin-left: auto;
     margin-right: auto;
     width: 60%;
+}
+#sample2{
+    font-size: 34pt;
+    color: #f6c324;
+    background-color: #3aa3a0;
+}
+#sample3{
+    font-size: 18pt;
+    color: blue;
+    background-color: #8ae2e0;
 
 }
+#sample4{
+    font-size: 20pt;
+}
+#sample5{
+    color: black;
+    font-size: 11pt;
+    background-color: white;
+}
+
+
 
 @media only screen and (min-width: 60em) {
 ul{
