@@ -29,11 +29,12 @@ nav ul li{
     font-size: 18pt;
     color: blue;
     flex: 1 1 auto;
-    padding: 0.5em;
+    list-style-type: none;
 }
 
 .visiting{
-    background-color: #F7d330;
+    /* background-color: #F7d330; */
+    border-bottom: 0.5em solid yellow;
     height: 40px;
 }
 .color-palete{
