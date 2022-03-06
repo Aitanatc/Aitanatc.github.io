@@ -31,33 +31,29 @@ nav, footer {
 }
 .navigation a{
     display: block;
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
     text-align: left;
     color: black;
     font-weight: 500;
     transition: 0.3s;
-}
-.navigation a:menu::before{
-    content: "-";
+    list-style-type: none;
 }
 .navigation a:hover {
 	color: white;
-	background-color: yellow;
+	/* background-color: yellow; */
+    border-bottom: 0.5em solid yellow;
 }
-
 .responsive li{
     display: block;
-}
-.responsive a.ham::before{
-    content: 'x';
 }
 
 img{
     position: fixed;
     top: 0;
-    left:0;
-    margin-left: 20em;
-    margin-top: 5em;
+    left: 0;
+    /* margin-left: 20em;
+    margin-top: 5em; */ 
+    /*I am not wearing these two lines because they don't allow the umberlla logo to move responsively*/
 }
 .title2{
     text-align: center;
