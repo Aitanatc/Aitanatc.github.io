@@ -1,5 +1,60 @@
-@media only screen and (min-width: 15em) {
-    .grid-container {
-        grid-template-columns: 1fr;
-    }
+
+.grid-container{
+    font: Arial;
+    color: white;
+    padding-left: 1em;
+    background-color: #ffffff;
+    padding: 1em;  
 }
+
+header{
+    color: white;
+    text-align: center;
+    margin: 5px;
+    border: 2px solid #0c16a5;
+    background: #e2085b;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 25px;
+
+}
+.principle1, .principle2, .principle3{
+    margin: 5px;
+    border: 2px solid #0c16a5;
+    background: #e2085b;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 25px;
+}
+/* .principle1{
+    grid-column: 1/2;
+}
+.principle2{
+    grid-column: 2/3;
+}
+.principle3{
+    grid-column: 3/4; 
+}    */
+footer{
+    color: white;
+    text-align: center;
+    margin: 5px;
+    border: 2px solid #0c16a5;
+    background: #e2085b;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 25px;
+}
+a:link {
+    color: rgb(0, 0, 0);
+  }
+a:visited {
+    color: rgb(228, 220, 173);
+  }
+a:hover {
+    color: rgb(116, 179, 15);
+  }
+  
+a:active {
+    color: yellow;
+  }
