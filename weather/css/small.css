@@ -107,8 +107,6 @@ nav, footer {
     border-bottom: 0.5em solid yellow;
     height: 40px;
 }
-.googleMap{
-    width: 25%;
-    height: 250px;
-    background-color: grey;
+.contact-us{
+    height: 400px;
 }
