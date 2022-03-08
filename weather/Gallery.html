@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="Week 2 assignment" content="Preston idaho page">
+<meta name="Aitana Toscano" content="Preston Idaho">
+
+<title>Assigment week 2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link href="css/normalize.css" rel="stylesheet">
+<link href="css/small.css" rel="stylesheet">
+<link href="css/medium.css" rel="stylesheet">
+<link href="css/large.css" rel="stylesheet">
+
+
+     
+</head>
+<body>
+
+	<header>
+        <img src="images/umbrella.png" alt="logo" width="5%">
+        <h1>Weather Community News</h1>
+        <h2 class="slogan"> Possible Slogan or Tagline</h2>
+    </header>
+    
+    <nav>
+        <ul class="navigation">
+            <li><a class="menu" href="#" >Menu</a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="SodaSprings.html">Soda Springs</a></li>
+            <li><a href="FishHaven.html">Fish Haven</a></li>    
+            <li><a href="StormCenter.html">Storm Center</a></li>    
+            <li><a class="visiting" href="Gallery.html">Gallery</a></li>    
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="contact-us">
+            <h2>Contact-us</h2>
+            <div id="googleMap" style="width:100%;height:400px;"></div>
+            <script>
+                function myMap() {
+                var mapProp= {
+                  center:new google.maps.LatLng(51.508742,-0.120850),
+                  zoom:5,
+                };
+                var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                }
+                </script>
+                
+                <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+        </div>
+    </main>
+    
+    <footer>
+        <p>Community Weather News | Aitana Toscano | WDD230</p>
+    </footer>
+    
+<script src="js/scripts.js"></script>
+</body>
+</html>

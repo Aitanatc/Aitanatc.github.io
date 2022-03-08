@@ -102,3 +102,13 @@ nav, footer {
 /* .storm-img{
     align-content: right;
 } */
+.visiting{
+    /* background-color: #F7d330; */
+    border-bottom: 0.5em solid yellow;
+    height: 40px;
+}
+.googleMap{
+    width: 25%;
+    height: 250px;
+    background-color: grey;
+}
