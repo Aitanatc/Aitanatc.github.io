@@ -11,7 +11,13 @@ header{
     text-align: center;
     background-color: yellow;
     max-width: 100%;
-    align-tracks: center;
+    display: flex;
+    justify-content: center;
+}
+.slogan{
+    position: absolute;
+    top: 50px;
+    font-size: 1em;
 }
 nav, footer {
     margin: 0 auto;
@@ -47,14 +53,40 @@ nav, footer {
     display: block;
 }
 
-img{
-    position: fixed;
-    top: 0;
-    left: 0;
-    /* margin-left: 20em;
-    margin-top: 5em; */ 
-    /*I am not wearing these two lines because they don't allow the umberlla logo to move responsively*/
-}
 .title2{
     text-align: center;
+}
+.box, .forecast, .article, .contact-us{
+    display: block;
+    max-width: 80%;
+    margin: 1em auto;
+    border: solid black;
+    padding: 1em;
+    background-color: lightblue;
+    color: #000;
+}
+.summary{
+    position: static;
+    top: 13em;
+    left: 8em;
+    background-color: grey;
+    border: 1.5px solid black;
+    padding: 0.5em;
+}
+.days{
+    display: flex;
+    justify-content: center;
+}
+.weekday {
+    display: block;
+    padding: 5px;
+    border-bottom: 1px solid #333;
+    text-align: center;
+    align-items: center;
+}
+.forecast{
+    text-align: center;
+}
+.change{
+    margin-top: 11px;
 }
