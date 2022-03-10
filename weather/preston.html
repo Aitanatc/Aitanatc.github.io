@@ -39,11 +39,21 @@
     <main>
         <h1 class="title2"> Consult the weather &bull; Preston Idaho</h1>
         <div class="box">
-            <img src="images/weather.jpg" width="100%" alt="weather image">
+            <!-- <figure class="hero">
+            <img src="images/wdd230_image_franklinOriginal.jpeg" width="100%" alt="weather image">
+            <figcaption class="caption1">Weather image</figcaption>
+            </figure> -->
+            <picture>
+                <source media="(min-width: 60em)" srcset="images/wdd230_image_franklinOriginal.jpeg">
+                <source media="(min-width: 30em)" srcset="images/weather.jpg">
+                <source media="(min-width: 5em)" srcset="images/wdd230_image_franklinOriginal.jpeg">
+                <img src="images/weather.jpg" alt="Flowers" width="100%">
+            </picture>
+
             <section class="summary">
                 <h2>Weather Summary</h2>
                 <p>Currently: <span>18°C</span></p>
-                <p>Wind Chill: <span>10°C</span></p>
+                <p>Wind Chill: <span id="wind-chill"></span></p>
                 <p>Humidity: <span>75°C</span></p>
                 <p>Wind Speed: <span>2 mph</span></p>
                 

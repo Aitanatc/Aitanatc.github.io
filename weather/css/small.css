@@ -28,6 +28,7 @@ nav, footer {
 .navigation {
     list-style-type: none;
     padding: 0;
+
 }
 .navigation li:first-child{
     display: block;
@@ -43,6 +44,8 @@ nav, footer {
     font-weight: 500;
     transition: 0.3s;
     list-style-type: none;
+    text-decoration: none;
+
 }
 .navigation a:hover {
 	color: white;
@@ -99,14 +102,17 @@ nav, footer {
 .change{
     margin-top: 11px;
 }
-/* .storm-img{
-    align-content: right;
-} */
+
 .visiting{
     /* background-color: #F7d330; */
     border-bottom: 0.5em solid yellow;
     height: 40px;
 }
-.contact-us{
-    height: 400px;
+main figure.hero{
+    width: 100%;
+    border: 1px black dashed;
+    margin-left: -1px;
+}
+.caption1{
+    text-align: center;
 }
