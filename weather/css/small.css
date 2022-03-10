@@ -38,7 +38,6 @@ nav, footer {
 }
 .navigation a{
     display: block;
-    /* padding: 0.5rem; */
     text-align: left;
     color: black;
     font-weight: 500;
@@ -56,10 +55,10 @@ nav, footer {
     display: block;
 }
 
-.title2{
+.title2, .fiveday{
     text-align: center;
 }
-.box, .forecast, .article{
+.box, .grid, .article{
     display: block;
     max-width: 80%;
     margin: 1em auto;
@@ -85,7 +84,21 @@ nav, footer {
     border: 1.5px solid black;
     padding: 0.5em;
 }
-.days{
+.visiting{
+    /* background-color: #F7d330; */
+    border-bottom: 0.5em solid yellow;
+    height: 40px;
+}
+main figure.hero{
+    width: 100%;
+    border: 1px black dashed;
+    margin-left: -1px;
+}
+.caption1{
+    text-align: center;
+}
+
+/* .days{
     display: flex;
     justify-content: center;
 }
@@ -100,19 +113,40 @@ nav, footer {
     text-align: center;
 }
 .change{
-    margin-top: 11px;
+    margin-top: 14px;
+} */
+
+.flex {
+	display: flex;
+	/* flex-direction: row; */
+	/* let us combine row and wrap with flow */
+	flex-flow: row wrap;
 }
 
-.visiting{
-    /* background-color: #F7d330; */
-    border-bottom: 0.5em solid yellow;
-    height: 40px;
+.flex-col {
+	flex: 1 1 auto;
+	background-color: #ffc300;
 }
-main figure.hero{
-    width: 100%;
-    border: 1px black dashed;
-    margin-left: -1px;
+.flex-col, .column-col, .grid-col {
+	border-bottom: 1px solid #333;
+	border-left: 1px solid #333;
+	text-align: center;
 }
-.caption1{
-    text-align: center;
+.flex-col:hover, td:hover, .column-col:hover, .grid-col:hover {
+	opacity: 0.75;
+	background-color: #001D3D; 
+	color: #ffc300;
+}
+.grid { 
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(50px,1fr));
+}
+.grid-col {
+	background-color: yellow;
+    border: yellow;
+}
+
+.image-day{
+	border-radius: 25px;
+    width: 70px;
 }
