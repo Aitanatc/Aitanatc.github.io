@@ -21,7 +21,7 @@ header{
 }
 nav, footer {
     margin: 0 auto;
-    max-width: 90%;
+    max-width: 100%;
     background-color: lightblue;
     text-align: center;
 }
@@ -68,12 +68,18 @@ nav, footer {
     color: #000;
 }
 .contact-us{
-    display: block;
+
     max-width: 100%;
     margin: 1em auto;
     padding: 1em;
     background-color: yellow;
     color: #000;
+}
+.contact-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 1.5em;    
 }
 
 .summary{
@@ -149,4 +155,17 @@ main figure.hero{
 .image-day{
 	border-radius: 25px;
     width: 70px;
+}
+.storm{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 2em;
+}
+.storm-img{
+    grid-column: 2/3;
+    width: 100%;
+}
+.social img{
+    width: 75px;
 }
