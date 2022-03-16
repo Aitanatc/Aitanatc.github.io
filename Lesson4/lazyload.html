@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Lazy-load" content="Week4 Lazyload activity">
+    <title>Lesson 4 - Lazy Load</title>
+    <link rel="stylesheet" href="../css/Normalize.css">
+    <link rel="stylesheet" href="lazyload.css">
+</head>
+<body>
+    <main>
+        <h1>Progressive Loading Images</h1>
+        <picture>
+            <img src="images/placeholder.JPG" data-src="images/forest.JPG" id="img"alt="forest">
+        </picture>
+        <picture>
+            <img src="images/placeholder.JPG" data-src="images/bird.JPG" id="img" alt="bird">
+        </picture><picture>
+            <img src="images/placeholder.JPG" data-src="images/flowers.JPG" id="img" alt="flowers">
+        </picture>
+        <picture>
+            <img src="images/placeholder.JPG" data-src="images/man.JPG" id="img" alt="man and dog">
+        </picture>
+        <picture>
+            <img src="images/placeholder.JPG" data-src="images/tree.JPG" id="img" alt="tree">
+        </picture>
+        <picture>
+            <img src="images/placeholder.JPG" data-src="images/waterfall.JPG" id="img" alt="waterfall">
+        </picture>
+    </main>
+    <script src="lazyload.js" defer></script>
+</body>
+</html>
