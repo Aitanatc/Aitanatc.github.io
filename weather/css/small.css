@@ -1,4 +1,7 @@
-html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+@media only screen and (max-width: 20em){
+
+
+}html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
@@ -14,11 +17,16 @@ header{
     display: flex;
     justify-content: center;
 }
-.slogan{
+.slogan1{
     position: absolute;
     top: 50px;
     font-size: 1em;
     margin-top: 115px;
+}
+.slogan{
+    position: absolute;
+    top: 50px;
+    font-size: 1em;
 }
 nav, footer {
     margin: 0 auto;
@@ -29,7 +37,6 @@ nav, footer {
 .navigation {
     list-style-type: none;
     padding: 0;
-
 }
 .navigation li:first-child{
     display: block;
@@ -170,3 +177,31 @@ main figure.hero{
 .social img{
     width: 75px;
 }
+
+/*GALLERY PAGE*/
+.galleryimg{
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 2em;
+    row-gap: 2em;
+    align-items: center;
+    justify-content: center;
+}
+picture img[data-src] {
+    filter: blur(2em);
+    
+}
+picture img {
+    filter: blur(0em);
+    transition: filter 1s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 300px;
+}
+figcaption{
+    text-align: center;
+}
+
+    

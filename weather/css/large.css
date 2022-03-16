@@ -1,3 +1,15 @@
+
+@media only screen and (min-width: 32.5em){
+	.galleryimg{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 2em;
+		row-gap: 2em;
+		align-items: center;
+		justify-content: center;
+	}
+
+}
 @media only screen and (min-width: 60em) {
 	.navigation {
 		display: flex;
@@ -26,13 +38,29 @@
 		margin-top: 40px;
 	}	
 
-	.slogan{
+	.slogan1{
 		position: absolute;
 		top: 50px;
 		font-size: 1em;
 		margin-top: 60px;
 	}
-}
-@media only screen and (max-width: 30em){
+	.slogan{
+		position: absolute;
+		top: 50px;
+		font-size: 1em;
+	}
+/*GALLERY PAGE*/
+	.galleryimg{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		column-gap: 2em;
+		row-gap: 2em;
+		align-items: center;
+    	justify-content: center;
+	}
+	main picture:hover {
+		box-shadow: 0 0 50px yellow;
+	}
+
 
 }
