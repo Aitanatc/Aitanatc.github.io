@@ -240,8 +240,8 @@ form label.in-danger, textarea {
     display: block;
     padding: 0.25em 1em;
     font-size: 18px;
+    
 }
-
 form input.submit-button {
     border: none;
     background-color: rgb(23, 133, 170);
