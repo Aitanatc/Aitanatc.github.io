@@ -205,6 +205,9 @@ figcaption{
 }
 
 /*------Storm Center - FORM---------*/    
+.stormCenter {
+    text-align: center;
+}
 form fieldset{
     margin: 2rem 0;
     border: 1px solid grey;
