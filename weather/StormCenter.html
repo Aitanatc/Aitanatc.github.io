@@ -37,55 +37,55 @@
     </nav>
     
     <main>
-        <h1 class="title2"> Consult the weather &bull; Storm Center</h1>
-        <div class="box">
-            <img src="images/weather.jpg" width="100%" alt="weather image">
-            <section class="summary">
-                <h2>Weather Summary</h2>
-                <p>Currently: <span>18°C</span></p>
-                <p>Wind Chill: <span>10°C</span></p>
-                <p>Humidity: <span>75°C</span></p>
-                <p>Wind Speed: <span>2 mph</span></p>
-                
-            </section>
-        </div>
-        <div class="forecast">
-            <h2>Five-Day Forecast</h2>
-            <section class="days"> 
-                <div>                
-                    <span class="weekday">Monday</span>
-                    <img src="images/cloudy.png" alt="weather icon" width="50%">
-                </div>
-                <div> 
-                    <span class="weekday">Tuesday</span>
-                    <img class='change' src="images/rainy.png" alt="icon" width="20%">
-                </div>
-                <div> 
-                    <span class="weekday">Wednesday</span>
-                    <img src="images/stormy.png" class='change' alt=" icon" width="20%">
-                </div>
-                <div>
-                    <span class="weekday">Thursday</span>
-                    <img src="images/sunny.png" class='change' alt="icon" width="20%">
-                </div>
-                <div> 
-                    <span class="weekday">Friday</span>
-                    <img src="images/cloudy.png" alt="icon" width="50%">
-                </div>
-                </section>
-        </div>
-        <div class="article">
-            <h2>Write article here..</h2>
-            <div class="storm">
-            <img class="storm-img" src="images/storm.jpg" alt="storm" width="30%" >
-            </div>
-        </div>
-        <div class="contact-us">
+        <h2>Storm Center</h2>
+        <form method="get" action="-">
+            <fieldset>
+                <legend>Register your Storm Experience</legend>
+                <label class="one"> Full Name*<input type="text" name="name" required></label>
+                <label class="one"> E-mail<input type="email" name="email" placeholder="username@email.com"></label>
+                <label class="one"> Phone Number*<input type="tel" name="Phone" required></label>
+                <label class="one"> Zip Code*<input type="number" name="Zip" required></label>
+                <label class="one"> Storm Date*<input type="date" name="date"></label>
+                <label class="one"> Storm type
+                    <select name="type">
+                        <option value="">Select the type of storm</option>
+                        <option value="typef">Flash Flood</option>
+                        <option value="typeh">Hail</option>
+                        <option value="typehu">Hurricane</option>
+                        <option value="typeth">Thunderstorm</option>
+                        <option value="typeto">Tornado</option>
+                    </select>
+                    </label>
+            
+                <label class="one" for="rating"> Storm Severity (1 to 10)<input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)" name="name" required></label>
+
+                <div>User in-danger level</div>
+                <label class="in-danger"><input type="radio" name="danger" value="yes">Yes</label>
+                <label class="in-danger"><input type="radio" name="danger" value="no">No</label>
+                <label class="in-danger"><input type="radio" name="danger" value="maybe">Maybe</label>
+
+                <label class="Additional"> Additional information or comments</label>
+                    <textarea class="Additional" rows="5" cols="40" placeholder="Add any comment or information you may have about the storm center."></textarea>
+            </fieldset>
+            <input type="submit" value="Send information" class="submit-button">
+        </form>
+        
+        <section class="contact-us">
             <h2>Contact-us</h2>
+            <div class="contact-info">
             <div class="gmaps">
                 <iframe width="400" height="300" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" ></iframe>
-            </div>                
-        </div>
+            </div>
+            <div class="info">
+                <p>EMAIL: prestonweather@example.com</p>
+                <p>Visit our webpage anytime you need, or follow us on our social media</p>
+                <div class="social">
+                    <a href= "https://www.facebook.com/"><img src="images/facebook.png" ></a>
+                    <a href="https://www.instagram.com/"><img src="images/instagram.png"> </a>
+                </div>
+            </div>
+            </div>
+        </section>
     </main>
     
     <footer>
