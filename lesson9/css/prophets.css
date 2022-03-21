@@ -1,0 +1,35 @@
+body{
+    padding: 1em;
+}
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;   
+    background-color: #2222;
+}
+
+section:hover {
+    box-shadow: 20px 20px 20px 20px #5577;
+}
+h1, footer{
+    text-align: center;
+    padding: 1em;
+}
+section {
+    border: 2px solid black;
+    padding: 0.5em;
+}
+
+@media only screen and (min-width: 640px) {
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+@media only screen and (min-width: 60em ) {
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
