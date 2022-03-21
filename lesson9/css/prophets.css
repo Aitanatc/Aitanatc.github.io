@@ -7,7 +7,10 @@ body{
     text-align: center;   
     background-color: #2222;
 }
-
+img{
+    width: 300px;
+    height: 400px;
+}
 section:hover {
     box-shadow: 20px 20px 20px 20px #5577;
 }
