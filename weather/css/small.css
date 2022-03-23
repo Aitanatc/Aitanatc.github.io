@@ -261,3 +261,19 @@ form label input:required{
 form label input:required:valid{
     border-left: green solid 5px;
 }
+/* HOME PAGE */
+section {
+    background-color: rgb(194, 229, 240);
+    border: 0.2em solid rgb(143, 166, 240);
+    text-align: center;
+}
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+}
+.cards img{
+    width: 400px;
+    height: 250px;
+    padding: 0.5em;
+}
