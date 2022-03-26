@@ -28,17 +28,38 @@ fetch(apiURL)
         console.log(jsObject);
         const summary = jsObject;
         document.querySelector('#currently').innerHTML = summary.weather[0].main;
-        document.querySelector('#temperature').textContent = summary.main.temp;
+        document.querySelector('#temperature').textContent = summary.main.temp_max;
+        document.querySelector('#currtemp').textContent = summary.main.temp;
         document.querySelector('#humidity').innerHTML = summary.main.humidity;
         document.querySelector('#windSpeed').innerText = summary.wind.speed;
 
     });
 //// five day forecast
-const forecastArray = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
-const forecastURL = "http://api.openweathermap.org/data/2.5/weather?q=Preston,5604473&appid=0205b06aab5afe13a29d9528615f45fe&units=imperial";
-// fetch(forecastURL)
-//     .then((response) => response.json())
-//     .then((jsObject) => {
-//         console.table(jsObject);
-//     }
+const forecastURL = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=0205b06aab5afe13a29d9528615f45fe&units=imperial";
 
+
+fetch(forecastURL)
+  .then(function (response) {
+	return response.json();
+  })
+  .then(function (jsonObject) {
+	const forecast = jsonObject["list"].filter((forecast) => {
+		if(forecast.dt_txt.includes(" 18:00:00")) {
+			return forecast;
+		}
+	});
+
+    const week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    for (let i = 0; i < forecast.length; i++) {
+        let card = document.createElement('div');
+        card.setAttribute('class', 'temp');
+        document.querySelector('div.forecast').appendChild(card);
+
+        let spanTemp = document.createElement("span");
+        spanTemp.setAttribute("class", "data");
+        let floatTemp = parseFloat(forecast[i].main.temp);
+        let roundTemp = Math.round(floatTemp);
+        spanTemp.textContent = roundTemp + "F";
+        card.appendChild(spanTemp);
+    }
+});
