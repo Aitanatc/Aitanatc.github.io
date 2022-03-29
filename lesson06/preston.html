@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="Week 5 assignment" content="Preston idaho page">
+<meta name="Aitana Toscano" content="Preston Idaho">
+
+<title>Assigment week 5</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link href="css/normalize.css" rel="stylesheet">
+<link href="css/small.css" rel="stylesheet">
+<link href="css/medium.css" rel="stylesheet">
+<link href="css/large.css" rel="stylesheet">
+
+     
+</head>
+<body>
+
+	<header>
+        <img src="images/umbrella.png" alt="logo" width="5%">
+        <h1>Weather Community News</h1>
+        <h2 class="slogan"> Your weather info source</h2>
+    </header>
+    
+    <nav>
+        <ul class="navigation">
+            <li><a class="menu" href="#" >Menu</a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a class="visiting" href="preston.html">Preston</a></li>
+            <li><a href="SodaSprings.html">Soda Springs</a></li>
+            <li><a href="FishHaven.html">Fish Haven</a></li>    
+            <li><a href="StormCenter.html">Storm Center</a></li>    
+            <li><a href="Gallery.html">Gallery</a></li>    
+        </ul>
+    </nav>
+    
+    <main>
+        <br>
+        <h1 class="title2"> Consult the weather &bull; Preston Idaho</h1>
+        <div class="box">
+            <figure class="hero">
+                <img src="images/wdd230_image_franklinOriginal.jpeg" width="100%" alt="weather image" sizes="50vw"
+                    srcset="images/weather.jpg 1x,
+                            images/wdd230_image_franklinOriginal.jpeg 2x,
+                            images/wdd230_image_franklinOriginal.jpeg 3x"/>
+            <figcaption class="caption1"> Weather image</figcaption>
+            </figure> 
+            <!-- <picture>
+                <source media="(min-width: 60em)" srcset="images/wdd230_image_franklinOriginal.jpeg">
+                <source media="(min-width: 30em)" srcset="images/weather.jpg">
+                <source media="(min-width: 5em)" srcset="images/wdd230_image_franklinOriginal.jpeg">
+                <img src="images/weather.jpg" alt="Flowers" width="100%">
+            </picture> -->
+            <section class="summary">
+                <h2>Weather Summary</h2>
+                <p>Currently: <span class="description" id="currently"></span></p>
+                <p>High: <span class="description" id="temperature"></span> °F </p>
+                <p>Current Temp: <span class='description' id='currtemp'></span>F</p> 
+                <p>Wind Chill: <span id="wind-chill"><span class='description' id=''></span></p>
+                <p>Humidity: <span class='description' id="humidity"></span>%</p>
+                <p>Wind Speed: <span class="description" id="windSpeed"></span> mph</p>
+                
+            </section>
+        </div>
+        <br>
+        <h2 class="fiveday"> Five Day Forecast</h2>
+        <div class="grid">
+            <div class="forecast">
+                <span class="grid-col">Monday</span>
+                <img class="image-day" src="images/sunny.png" alt="sunny">
+            </div>
+            <div class="forecast">
+                <span class="grid-col">Tuesday</span>
+                <img class="image-day" src="images/rainy.png" alt="rainy">
+            </div>
+            <div class="forecast">
+                <span class="grid-col">Wednesday</span>
+                <img class="image-day" src="images/rainy.png" alt="rainy">
+            </div>
+            <div class="forecast">
+                <span class="grid-col">Thursday</span>
+                <img class="image-day" src="images/stormy.png"  alt="stormy">
+            </div>
+            <div class="forecast">
+                <span class="grid-col">Friday</span>
+                <img class="image-day" src="images/sunny.png" alt="sunny">
+            </div>
+        </div>
+        
+        <div class="article">
+            <h2>Write article here..</h2>
+            <div class="storm">
+                <p>Lightning is probably on the increase, and that’s because of us.
+                    Climate change seems to be driving up the frequency of strikes, while population
+                     growth and changes in land use are exacerbating their effects. 
+                     The toll on both the human and natural spheres has sparked a new urgency in
+                      getting to grips with this everyday phenomenon.</p>
+            <img class="storm-img" src="images/storm.jpg" alt="storm" width="30%" >
+
+            </div>
+        </div>
+        <section class="contact-us">
+            <h2>Contact-us</h2>
+            <div class="contact-info">
+            <div class="gmaps">
+                <iframe width="400" height="300" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" ></iframe>
+            </div>
+            <div class="info">
+                <p>EMAIL: prestonweather@example.com</p>
+                <p>Visit our webpage anytime you need, or follow us on our social media</p>
+                <div class="social">
+                    <a href= "https://www.facebook.com/"><img src="images/facebook.png" ></a>
+                    <a href="https://www.instagram.com/"><img src="images/instagram.png"> </a>
+                </div>
+            </div>
+            </div>
+        
+        </section>
+    </main>
+    <footer>
+        <p id="copyright">Community Weather News | Aitana Toscano | WDD230</p>
+        <p id="date"></p>
+    
+<script src="js/scripts.js" defer></script>
+<script src="js/pancake-banner.js"></script>
+
+</body>
+</html>
