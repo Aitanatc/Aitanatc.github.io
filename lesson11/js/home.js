@@ -27,7 +27,7 @@ fetch(requestURL)
       h2.textContent = towns[i].name;
       card.appendChild(h2);
       // Motto
-      let h3 = document.createElement("h3");
+      let h3 = document.createElement("h5");
       h3.textContent = towns[i].motto;
       card.appendChild(h3);
       // Year Founded
@@ -35,11 +35,11 @@ fetch(requestURL)
       h4.textContent = "Year Founded: " + towns[i].yearFounded;
       card.appendChild(h4);
       // Population
-      let h5 = document.createElement("h5");
+      let h5 = document.createElement("h4");
       h5.textContent = "Population: " + towns[i].currentPopulation;
       card.appendChild(h5);
       // Annual Rain Fall
-      let h6 = document.createElement("h6");
+      let h6 = document.createElement("h4");
       h6.textContent = "Annual Rain Fall: " + towns[i].averageRainfall;
       card.appendChild(h6);
       // images   

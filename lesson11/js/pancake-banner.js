@@ -38,7 +38,7 @@ function toggleMenu() {
 	document.getElementsByClassName('navigation')[0].classList.toggle("responsive");
 }
 
-if (dayName == 'Tuesday') {
+if (dayName == 'Friday') {
 	var banner = document.createElement('div');
 	banner.innerHTML = 'Pancakes in the Park! 9:00 a.m. Every Saturday at the City Park.';
 

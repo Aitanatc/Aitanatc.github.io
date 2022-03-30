@@ -63,3 +63,5 @@ fetch(forecastURL)
         card.appendChild(spanTemp);
     }
 });
+
+

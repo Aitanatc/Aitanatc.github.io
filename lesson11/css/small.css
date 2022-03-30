@@ -63,7 +63,7 @@ nav, footer {
     display: block;
 }
 
-.title2, .fiveday{
+.title2, .fiveday, .homecities{
     text-align: center;
 }
 .box, .grid, .article{
@@ -74,6 +74,9 @@ nav, footer {
     padding: 1em;
     background-color: lightblue;
     color: #000;
+}
+.storm p {
+    font-size: 1.5em;
 }
 .contact-us{
 
