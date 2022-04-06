@@ -5,21 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="Scoots contact" content="WDD 230 Project">
     <title>SCOOTS - Contact us</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <a href="home.html" ><img src="assets/"></a>
-        <a href="home.html"><h1>Scoots</h1></a>
-        <h4>Rent your scoot, live the experience.</h4>
-        
-        <h3>Adress:</h3>
-        <h6>LALALALALAL</h6>
-        <H3>Phone number:</H3>
-        <h6>275-168-894</h6>
-
-        <a href="https://www.facebook.com/"><img src=assets/"></a>
-        <a href="https://www.instagram.com/"><img src=assets/"></a>
-        <a href="https://www.twitter.com/"><img src=assets/"></a>
+        <div class="scoots">
+        <a href="home.html" ><img class="logo" src="assets/logo.jpg"></a>
+        <h1 class="scoots"> <a href="home.html">Scoots</a></h1>
+        <h4 class="scoots-slogan">Rent your scoot, live the experience.</h4>
+        </div>
+        <div class="contact">
+            <h3>Adress:</h3>
+            <h5>LALALALALAL</h5>
+            <H3>Phone number:</H3>
+            <h5>275-168-894</h5>
+        </div>
+        <div class="media">
+        <a href="https://www.facebook.com/"><img src="assets/facebook.png"></a>
+        <a href="https://www.instagram.com/"><img src="assets/instagram.png"></a>
+        <a href="https://www.twitter.com/"><img src="assets/whatsapp.png"></a>
+        </div>
     </header>
     <main>
         <nav>
@@ -28,9 +35,29 @@
                 <li><a href="rentals.html">Rentals</a></li>
                 <li><a href="reservations.html">Reservations</a></li>
                 <li><a href="tours.html">Tours</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
             </ul>
         </nav>
+
+        <section>
+            <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">how to embed google maps</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:200px;width:400px;}</style></div></div>
+            <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">how to embed google maps</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:200px;width:400px;}</style></div></div>
+        </section>
+        <section>
+            <h2>Contact Us</h2>
+            <form>
+                <label>Name</label>
+                <input type="text" name="name">
+                <br>
+                <label>Email</label>
+                <input trype="email" name="email" placeholder="Provide a real email in which we can contact you.">
+                <br>
+                <label>Message</label>
+                <textarea placeholder="Write here any message you have for us."></textarea>
+                <br>
+            </form>
+        </section>
+        
     </main>
     <footer>
         <h5>Aitana Toscano Cedeño - WDD230 Project - <a href="">BYUI Online Learning</a></h5>

@@ -1,0 +1,203 @@
+/* medium*/
+@media screen and (min-width: 35em) and (max-width: 60em) {
+    body {
+        background-color: white;
+    }
+    /* header */
+    header {
+        display: grid;
+        grid-template-columns: 400px 200px 1fr;
+        background-color: #fff1b1;
+        padding: 2em;
+        height: 60px;
+    }
+    .logo {
+        width: 60px;
+        grid-column: 2/3;
+        float: left;
+        border-radius: 75%;
+        padding-right: 10px;
+    }
+    .scoots {
+        display: inline;
+    }
+    header h1{
+        text-decoration: none;
+        list-style-type: none;
+        font-size: 2em;
+    }
+    header h4{
+        font-size: 0.75em;
+    }
+    .contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1em;
+        font-size: 0.75em;
+    }
+    .contact h3{
+        text-align: right;
+    }
+    .contact h5{
+        text-align: left;
+    }
+    .media {
+        text-align: right;
+        padding: 0.5em;
+    }
+    .media img{
+        width: 30px;
+        height: 30px;
+        margin-top: -15px;
+    }
+
+    /* Nav bar*/
+    main nav, footer{
+        background-color: #a52323;
+        display: flex; 
+        justify-content: center;
+    }
+    nav ul{
+        display: flex;
+        list-style-type: none;
+    }
+    nav a{
+        float: left;
+        color: white;
+        text-align: center;
+        padding: 0px 10px;
+        text-decoration: none;
+        font-size: 1.2em;
+    }
+    nav a:hover{
+        background-color: #dc8b18;
+    }
+    nav a.active {
+        background-color: #dc8b18;
+    }
+
+    /* main */
+    .grid{
+        display: grid;
+        grid-template-columns: 300px 1fr 1fr;
+    }
+    .rentals-grid{
+        padding: 1em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+    }
+    .reserve{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 1em;
+    }
+
+    /*footer*/
+    footer h5, h6, a{
+        color:white;
+    }
+}
+
+/*LARGE*/
+@media only screen and (min-width: 60em) {
+
+    body {
+        background-color: white;
+    }
+    /* header */
+    header {
+        display: grid;
+        grid-template-columns: 800px 500px 1fr;
+        background-color: #fff1b1;
+        padding: 2em;
+        height: 80px;
+    }
+    .logo {
+        padding-left: 11em;
+        width: 100px;
+        grid-column: 2/3;
+        float: left;
+        border-radius: 75%;
+        padding-right: 20px;
+    }
+    .scoots {
+        display: inline;
+    }
+    header h1{
+        text-decoration: none;
+        list-style-type: none;
+        font-size: 3em;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    header h4{
+        font-size: 1em;
+    }
+    .contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1em;
+    }
+    .contact h3{
+        text-align: right;
+    }
+    .contact h5{
+        text-align: left;
+    }
+    .media {
+        text-align: right;
+        padding: 2.2em;
+    }
+    .media img{
+        width: 40px;
+        height: 40px;
+        margin-top: -15px;
+    }
+
+    /* Nav bar*/
+    main nav, footer{
+        background-color: #a52323;
+        display: flex; 
+        justify-content: center;
+    }
+    nav ul{
+        display: flex;
+        list-style-type: none;
+    }
+    nav a{
+        float: left;
+        color: white;
+        text-align: center;
+        padding: 0px 80px;
+        text-decoration: none;
+        font-size: 1.2em;
+    }
+    nav a:hover{
+        background-color: #dc8b18;
+    }
+    nav a.active {
+        background-color: #dc8b18;
+    }
+
+    /* main */
+    .grid{
+        display: grid;
+        grid-template-columns: 600px 1fr 1fr;
+    }
+    .rentals-grid{
+        padding: 1em;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1em;
+    }
+    .reserve{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 2em;
+        width: 70%;
+    }
+    /*footer*/
+    footer h5, h6, a{
+        color:white;
+    }
+}

@@ -5,36 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="Scoots reservations" content="WDD 230 Project">
     <title>SCOOTS - Reservations</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <a href="home.html" ><img src="assets/"></a>
-        <a href="home.html"><h1>Scoots</h1></a>
-        <h4>Rent your scoot, live the experience.</h4>
-        
-        <h3>Adress:</h3>
-        <h6>LALALALALAL</h6>
-        <H3>Phone number:</H3>
-        <h6>275-168-894</h6>
-
-        <a href="https://www.facebook.com/"><img src=assets/"></a>
-        <a href="https://www.instagram.com/"><img src=assets/"></a>
-        <a href="https://www.twitter.com/"><img src=assets/"></a>
+        <div class="scoots">
+        <a href="home.html" ><img class="logo" src="assets/logo.jpg"></a>
+        <h1 class="scoots"> <a href="home.html">Scoots</a></h1>
+        <h4 class="scoots-slogan">Rent your scoot, live the experience.</h4>
+        </div>
+        <div class="contact">
+            <h3>Adress:</h3>
+            <h5>LALALALALAL</h5>
+            <H3>Phone number:</H3>
+            <h5>275-168-894</h5>
+        </div>
+        <div class="media">
+        <a href="https://www.facebook.com/"><img src="assets/facebook.png"></a>
+        <a href="https://www.instagram.com/"><img src="assets/instagram.png"></a>
+        <a href="https://www.twitter.com/"><img src="assets/whatsapp.png"></a>
+        </div>
     </header>
     <main>
         <nav>
             <ul>
                 <li><a href="home.html">Home</a></li>
                 <li><a href="rentals.html">Rentals</a></li>
-                <li><a href="reservations.html">Reservations</a></li>
+                <li><a class="active" href="reservations.html">Reservations</a></li>
                 <li><a href="tours.html">Tours</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+
+        <section class="reserve">
+        <div class="form">
+        <h2>Fill this form to make your reservation</h2>
+        <form>
+            <label>Name </label>
+            <input type="text" name="fname">
+            <br>
+            <label>Phone number </label>
+            <input type="phone" name="phone">
+            <br>
+            <label>Email </label>
+            <input type="mail" name="email" placeholder="user@example.com">
+            <br>
+            <label>Where will you be visiting us from? </label>
+            <input type="text" name="country" placeholder="Ex: Ecuador">
+            <br>
+            <label>Date you plan to arrive </label>
+            <input type="date" name="date">
+            <br>
+            <label>Date you plan to leave:  </label>
+            <input type="date" name="last-date">
+            <br>
+            <label>Rental Type: </label>
+            <select name="rental-type" >
+                <option value="1">Honda Metro Scooter</option>
+                <option value="2">Honda Dio Scooter</option>
+                <option value="3">Honda PCX150 Scooter</option>
+                <option value="4">Honda Pioneer ATV</option>
+                <option value="5">Jeep Wrangler-4 door with a/c</option>
+                <option value="6">Jeep Wrangler-2 door </option>
+            </select>
+            <br>    
+            <label>Comments</label>
+            <textarea name="message" rows="5" cols="40" placeholder="Write here any comments, specification we may need to know to better assist you."></textarea>
+            
+            <button type="reserved" onclick="alert('Thanks for reserving with us. One of our agents will contact you soon.')"> Make your reservation</button>
+        </form>
+        </div>
+        <div class="rule">
+
+        </div>
+        </section>
     </main>
     <footer>
         <h5>Aitana Toscano Cedeño - WDD230 Project - <a href="">BYUI Online Learning</a></h5>
-        <h6>Information Font: <a href="">Page</a></h6>
     </footer>
 
     

@@ -1,0 +1,133 @@
+/* small */
+body {
+    background-color: white;
+}
+/* header */
+header {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: #fff1b1;
+    padding: 2em;
+    height: 180px;
+}
+.logo {
+    width: 60px;
+    grid-column: 2/3;
+    float: left;
+    border-radius: 75%;
+    padding-right: 10px;
+}
+.scoots {
+    display: inline;
+}
+header h1{
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 2em;
+}
+header h4{
+    font-size: 0.75em;
+}
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1em;
+    font-size: 0.75em;
+}
+.contact h3{
+    text-align: right;
+}
+.contact h5{
+    text-align: left;
+}
+.media {
+    text-align: right;
+    padding: 0.5em;
+}
+.media img{
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+}
+/* Nav bar*/
+main nav, footer{
+    background-color: #a52323;
+    display: flex; 
+    justify-content: center;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+nav a{
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 0px 10px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+nav a:hover{
+    background-color: #dc8b18;
+}
+nav a.active {
+    background-color: #dc8b18;
+}
+/* main */
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+/* BUTTON*/
+.button{
+    padding-top: 10em;
+}
+button{
+    color: white;
+    background-color: blue;
+    height: 80px;
+    width: 200px;
+    border-radius: 50%;
+}
+button:hover{
+    background-color: #dc8b18;
+}
+.rental{
+    text-align: left;
+    margin-left: 2em;
+}
+section .rentals {
+    border: 5px solid #a52323;
+    padding: 1em;
+    text-align: center;
+}
+.rentals-grid{
+    padding: 1em;
+    display: grid;
+    grid-template-rows: auto;
+    gap: 1em;
+}
+#rental{
+    text-align: center;
+}
+/*Reservations*/
+.reserve{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2em;
+    width: 80%;
+}
+form{
+    display: grid;
+}
+.reserved{
+    border-radius: 25px;
+    height: 45px;
+    
+}
+
+/*footer*/
+footer h5, h6, a{
+    color:white;
+}
