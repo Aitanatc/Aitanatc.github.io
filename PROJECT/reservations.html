@@ -30,7 +30,8 @@
     </header>
     <main>
         <nav>
-            <ul>
+            <ul class="navigation">
+                <li><a class="menu" href="#">Menu</a> </li>
                 <li><a href="home.html">Home</a></li>
                 <li><a href="rentals.html">Rentals</a></li>
                 <li><a class="active" href="reservations.html">Reservations</a></li>
@@ -42,24 +43,24 @@
         <section class="reserve">
         <div class="form">
         <h2>Fill this form to make your reservation</h2>
-        <form>
-            <label>Name </label>
-            <input type="text" name="fname">
+        <form method="get" action="response.html">
+            <label>Name * </label>
+            <input type="text" name="fname" required>
             <br>
-            <label>Phone number </label>
-            <input type="phone" name="phone">
+            <label>Phone number * </label>
+            <input type="phone" name="phone" required>
             <br>
-            <label>Email </label>
-            <input type="mail" name="email" placeholder="user@example.com">
+            <label>Email * </label>
+            <input type="mail" name="email" placeholder="user@example.com" required>
             <br>
             <label>Where will you be visiting us from? </label>
             <input type="text" name="country" placeholder="Ex: Ecuador">
             <br>
-            <label>Date you plan to arrive </label>
-            <input type="date" name="date">
+            <label>Date you plan to arrive* </label>
+            <input type="date" name="date" required>
             <br>
-            <label>Date you plan to leave:  </label>
-            <input type="date" name="last-date">
+            <label>Date you plan to leave: *  </label>
+            <input type="date" name="last-date" required>
             <br>
             <label>Rental Type: </label>
             <select name="rental-type" >
@@ -74,10 +75,30 @@
             <label>Comments</label>
             <textarea name="message" rows="5" cols="40" placeholder="Write here any comments, specification we may need to know to better assist you."></textarea>
             
-            <button type="reserved" onclick="alert('Thanks for reserving with us. One of our agents will contact you soon.')"> Make your reservation</button>
+            <input type="submit" value="Reserve" class="submit-form"> 
         </form>
         </div>
+        <br> <br>
         <div class="rule">
+            <h2>Information and Services </h2>
+            <ul>
+                <li>A $50 security deposit is required to confirm reservations. </li>
+                <li>A valid drivers license is required in hand at time of rental.</li>
+                <li>A valid drivers license is required in hand at time of rental.</li>
+                <li>Fuel charge not included.</li>
+                <li>Unlimited mileage.</li>
+                <li>Liability insurance is free of charge.</li>
+                <li>Reservations rate requires 24 hour prior notification.</li>
+                <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
+                <li>Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
+                <li>Rentals may be returned to either location.</li>
+            </ul>
+
+
+
+
+
+
 
         </div>
         </section>
@@ -85,6 +106,7 @@
     <footer>
         <h5>Aitana Toscano Cedeño - WDD230 Project - <a href="">BYUI Online Learning</a></h5>
     </footer>
+    <script src="js/scripts.js" refer></script>
 
     
 </body>

@@ -30,7 +30,8 @@
     </header>
     <main>
         <nav>
-            <ul>
+            <ul class="navigation">
+                <li><a class="menu" href="#">Menu</a> </li>
                 <li><a href="home.html">Home</a></li>
                 <li><a href="rentals.html">Rentals</a></li>
                 <li><a href="reservations.html">Reservations</a></li>
@@ -38,32 +39,33 @@
                 <li><a class="active" href="contact.html">Contact</a></li>
             </ul>
         </nav>
-
-        <section>
-            <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">how to embed google maps</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:200px;width:400px;}</style></div></div>
-            <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">how to embed google maps</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:200px;width:400px;}</style></div></div>
-        </section>
-        <section>
-            <h2>Contact Us</h2>
-            <form>
-                <label>Name</label>
-                <input type="text" name="name">
-                <br>
-                <label>Email</label>
-                <input trype="email" name="email" placeholder="Provide a real email in which we can contact you.">
-                <br>
-                <label>Message</label>
-                <textarea placeholder="Write here any message you have for us."></textarea>
-                <br>
-            </form>
-        </section>
-        
+        <div class="contactpage">
+            <section class="map">
+                <div class="map1"><div class="gmap_canvas"><iframe width="350" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">how to embed google maps</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:200px;width:400px;}</style></div></div>
+                <div class="map2"><div class="gmap_canvas"><iframe width="350" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">how to embed google maps</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:200px;width:400px;}</style></div></div>
+            </section>
+            <section class="form2"> 
+                <h2>Contact Us</h2>
+                <form>
+                    <label>Name*</label>
+                    <input type="text" name="name" required>
+                    <br>
+                    <label>Email*</label>
+                    <input trype="email" name="email" placeholder="Provide a real email in which we can contact you." required>
+                    <br>
+                    <label>Message*</label>
+                    <textarea placeholder="Write here any message you have for us." required></textarea>
+                    <br>
+                    <input type="submit" value="Send Message" class="submit-message" onclick='alert("Thanks for sending us a message. We will soon contact you.")'> 
+                </form>
+            </section>
+        </div>
     </main>
     <footer>
         <h5>Aitana Toscano Cedeño - WDD230 Project - <a href="">BYUI Online Learning</a></h5>
         <h6>Information Font: <a href="">Page</a></h6>
     </footer>
-
+    <script src="js/scripts.js" refer></script>
     
 </body>
 </html>

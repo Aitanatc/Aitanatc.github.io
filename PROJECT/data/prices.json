@@ -1,0 +1,68 @@
+[
+    {
+      "type": "honda1",
+      "reservation": {
+         "half": 20,
+         "full": 30
+      },
+      "walk-in": {
+         "half": 25,
+         "full": 35
+      }
+   },
+    {
+      "type": "honda2",
+      "reservation": {
+         "half": 30,
+         "full": 40
+      },
+      "walk-in": {
+         "half": 35,
+         "full": 45
+      }
+   },
+    {
+      "type": "honda3",
+      "reservation": {
+         "half": 40,
+         "full": 50
+      },
+      "walk-in": {
+         "half": 45,
+         "full": 55
+      }
+   },
+    {
+      "type": "honda4",
+      "reservation": {
+         "half": 50,
+         "full": 70
+      },
+      "walk-in": {
+         "half": 60,
+         "full": 80
+      }
+   },
+    {
+      "type": "jeep1",
+      "reservation": {
+         "half": 70,
+         "full": 100
+      },
+      "walk-in": {
+         "half": 85,
+         "full": 125
+      }
+   },
+    {
+      "type": "jeep2",
+      "reservation": {
+         "half": 60,
+         "full": 85
+      },
+      "walk-in": {
+         "half": 70,
+         "full": 90
+      }
+   }
+   ]

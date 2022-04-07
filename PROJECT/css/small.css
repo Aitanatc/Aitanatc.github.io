@@ -50,6 +50,16 @@ header h4{
     margin-top: -15px;
 }
 /* Nav bar*/
+.navigation li:first-child{
+    display: inline;
+}
+.navigation li{
+    display: none;
+}
+.responsive li{
+    display: block;
+}
+
 main nav, footer{
     background-color: #a52323;
     display: flex; 
@@ -126,6 +136,60 @@ form{
     height: 45px;
     
 }
+.rule, .form {
+    margin-left: 2em;
+}
+
+.rule {
+    border: 5px solid #dc8b18;
+    border-radius: 15% 15%;
+}
+.rule h2{
+    text-align: center;
+}
+/*TOURS*/
+.tours{
+    padding: 1em;
+}
+.island{
+    border: 5px solid yellow;
+}
+#one, #two, #three{
+    border: 5px solid green;
+    padding: 1em;
+}
+.others-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    text-align: center;
+
+}
+.island img, h2{
+    width: 450px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgothers{
+    width: 250px;
+    height: 150px;
+}
+/*contact*/
+.form2{
+    width: 80%;
+    display: block;
+    margin-left: 40px;
+}
+.map {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 1em;
+    margin: 1em;
+    padding: 2em;
+}
+
 
 /*footer*/
 footer h5, h6, a{

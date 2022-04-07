@@ -92,6 +92,77 @@
         grid-template-columns: 1fr 1fr;
         padding: 1em;
     }
+    .reserve{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+    }
+    .rule, .form {
+        margin-left: 3.5em;
+    }
+    .reserve{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: fr;
+        padding: 2em;
+        gap: 1em;
+    }
+    
+    .rule {
+        margin-left: 10em;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .form {
+        margin-left: 4em;
+    }    
+    /*TOURS*/
+    .tours {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 2em
+    }
+    .island {
+        grid-column: 1/5;
+    }
+    .others {
+        grid-column: 2/6;
+    }
+    .others-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1em;
+        text-align: center;
+
+    }
+    .island img{
+        width: 350px;
+        float: right;
+        padding: 0.5em;
+    }
+    .island h2{
+        font-size: 28px;
+    }
+    .island article{
+        padding: 1em;
+        font-size: 20px;
+    }
+    /*CONTACT*/
+    .contactpage{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+    }
+    .form2{
+        width: 60%;
+    }
+    .map {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        gap: 1em;
+        padding: 1em;
+        width: 180px;
+    }
 
     /*footer*/
     footer h5, h6, a{
@@ -178,6 +249,34 @@
     nav a.active {
         background-color: #dc8b18;
     }
+    
+
+    main nav, footer{
+        background-color: #a52323;
+        display: flex; 
+        justify-content: center;
+    }
+    nav ul{
+        display: flex;
+        list-style-type: none;
+    }
+    nav a{
+        float: left;
+        color: white;
+        text-align: center;
+        padding: 0px 80px;
+        text-decoration: none;
+        font-size: 1.2em;
+    }
+    
+   
+    /* main */
+    .grid{
+        display: grid;
+        grid-template-columns: 600px 1fr 1fr;
+    }
+
+
 
     /* main */
     .grid{
@@ -193,11 +292,73 @@
     .reserve{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: fr;
         padding: 2em;
-        width: 70%;
+        gap: 1em;
+    }
+    
+    .rule {
+        margin-left: 10em;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .form {
+        margin-left: 4em;
+    }
+
+    /*TOURS*/
+    .tours {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 2em
+    }
+    .island {
+        grid-column: 1/5;
+    }
+    .others {
+        grid-column: 2/6;
+    }
+    .others-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1em;
+        text-align: center;
+
+    }
+    .island img{
+        width: 450px;
+        float: right;
+        padding: 0.5em;
+    }
+    .island h2{
+        font-size: 28px;
+    }
+    .island article{
+        padding: 1em;
+        font-size: 20px;
+    }
+    /*CONTACT PAGE*/
+    .contactpage{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+    }
+
+    .form2{
+        width: 60%;
+        display: block;
+        margin-left: 180px;
+    }
+    .map {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+        margin: 1em;
+        padding: 2em;
     }
     /*footer*/
     footer h5, h6, a{
         color:white;
     }
+    
 }
