@@ -1,0 +1,50 @@
+{
+  "generator": "analyze-css v2.1.93",
+  "metrics": {
+    "base64Length": 0,
+    "redundantBodySelectors": 0,
+    "redundantChildNodesSelectors": 0,
+    "colors": 0,
+    "comments": 3,
+    "commentsLength": 367,
+    "complexSelectors": 1,
+    "duplicatedSelectors": 0,
+    "duplicatedProperties": 0,
+    "emptyRules": 0,
+    "expressions": 0,
+    "oldIEFixes": 0,
+    "imports": 0,
+    "importants": 0,
+    "mediaQueries": 0,
+    "notMinified": 1,
+    "multiClassesSelectors": 1,
+    "parsingErrors": 0,
+    "oldPropertyPrefixes": 0,
+    "propertyResets": 0,
+    "qualifiedSelectors": 0,
+    "specificityIdAvg": 0,
+    "specificityIdTotal": 0,
+    "specificityClassAvg": 0.87,
+    "specificityClassTotal": 13,
+    "specificityTagAvg": 0.2,
+    "specificityTagTotal": 3,
+    "selectors": 15,
+    "selectorLengthAvg": 1.0666666666666667,
+    "selectorsByAttribute": 0,
+    "selectorsByClass": 12,
+    "selectorsById": 0,
+    "selectorsByPseudo": 1,
+    "selectorsByTag": 3,
+    "length": 4379,
+    "rules": 13,
+    "declarations": 46
+  },
+  "offenders": {
+    "complexSelectors": [
+      ".container-two:hover .morphing-circle @ 84:1"
+    ],
+    "multiClassesSelectors": [
+      ".container-two.morphing-circle @ 84:1"
+    ]
+  }
+}
